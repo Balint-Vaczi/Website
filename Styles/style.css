@@ -90,7 +90,7 @@ body {
     justify-content: center;
 }
 
-.hero-card {
+#hero-card {
     display: flex;
     align-items: center;
     gap: 24px;
