@@ -419,8 +419,10 @@ body {
     background-size: cover;
     background-position: bottom center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 12px;
 }
 
 .footer p {
@@ -429,4 +431,397 @@ body {
     color: white;
     font-size: 0.9rem;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-copy {
+    color: white;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    transition: color 0.2s;
+}
+
+.footer-nav-link:hover {
+    color: white;
+}
+
+
+/* ==========================================================================
+   HERO SCROLL BUTTON  (index.html)
+   ========================================================================== */
+
+.hero-scroll-btn {
+    display: inline-block;
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 6px 16px;
+    transition: background 0.2s;
+}
+
+.hero-scroll-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ==========================================================================
+   FEATURE ARTICLE + ASIDE  (index.html)
+   ========================================================================== */
+
+.feature-bg {
+    background-color: #1a5ea0;
+}
+
+.feature-section {
+    display: flex;
+    gap: 32px;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-article {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.article-header {
+    margin-bottom: 20px;
+}
+
+.article-header h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+}
+
+.article-date {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.article-intro {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.article-intro p,
+.article-body p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.article-link {
+    color: #a8d8f0;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
+
+.external-link {
+    color: #7ec8e3;
+    text-decoration: none;
+}
+
+.external-link:hover {
+    text-decoration: underline;
+}
+
+.feature-aside {
+    width: 240px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.feature-aside h3 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.feature-aside h3:first-child {
+    margin-top: 0;
+}
+
+.aside-list,
+.aside-ordered-list {
+    padding-left: 20px;
+    line-height: 1.9;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ==========================================================================
+   PRESS NEWSPAPER COLUMNS  (index.html)
+   ========================================================================== */
+
+.press-section {
+    background: linear-gradient(to bottom, #1a5ea0, #0f3460);
+    padding: 60px 40px;
+}
+
+.press-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.press-inner h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.press-columns {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.press-columns p {
+    margin-bottom: 16px;
+    break-inside: avoid;
+}
+
+
+/* ==========================================================================
+   VIDEO SECTION  (index.html)
+   ========================================================================== */
+
+.video-section {
+    background: #1a1a2e;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.video-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-section h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.video-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ==========================================================================
+   BACK TO TOP  (index.html)
+   ========================================================================== */
+
+.back-to-top-bar {
+    background: #0a2647;
+    padding: 14px 40px;
+    text-align: center;
+}
+
+.back-to-top {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.back-to-top:hover {
+    color: white;
+}
+
+
+/* ==========================================================================
+   STATS TABLE  (products.html)
+   ========================================================================== */
+
+.stats-section {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.stats-heading {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 0.9rem;
+}
+
+.stats-table th {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-table td {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stats-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.stats-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ==========================================================================
+   PRODUCT FEATURES LISTS  (products.html)
+   ========================================================================== */
+
+.features-section {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 24px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.features-col {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 24px 28px;
+}
+
+.features-col h3 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.format-list,
+.steps-list {
+    padding-left: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 2;
+    font-size: 0.9rem;
+}
+
+
+/* ==========================================================================
+   GOOGLE MAPS + CONTACT LAYOUT  (contact.html)
+   ========================================================================== */
+
+.contact-area {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 980px;
+}
+
+.contact-area .contact-card {
+    flex-shrink: 0;
+    width: 420px;
+}
+
+.map-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.map-heading {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.map-subtext {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.map-wrapper iframe {
+    display: block;
 }

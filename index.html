@@ -10,7 +10,7 @@
     <link rel="icon" href="Images/Globe_rotating.gif">
     <link rel="stylesheet" href="Styles/style.css">
 </head>
-<body class="home-page">
+<body id="top" class="home-page">
 
     <!-- Header -->
     <header class="header">
@@ -22,6 +22,7 @@
             <a href="products.html" class="nav-link">Products</a>
             <a href="vision.html" class="nav-link">Vision</a>
             <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#latest-news" class="nav-link">News</a>
         </nav>
     </header>
 
@@ -32,21 +33,104 @@
             <div class="hero-text">
                 <h1>Aerosoft</h1>
                 <p style="font-style: italic;">Where the Digital World Breathes.</p>
+                <!-- Internal link: hero to intro -->
+                <a href="#intro" class="hero-scroll-btn">Explore &#8595;</a>
             </div>
         </div>
     </section>
 
     <!-- Intro Section -->
-    <section class="intro">
+    <section id="intro" class="intro">
         <div class="intro-content">
             <h2>Intro</h2>
             <p>Aerosoft is a technology brand built at the intersection of digital innovation and physical craft. Inspired by the clean skies and luminous optimism of a connected era, we design software and hardware products that feel alive, light and fluid. Every product we create carries the same belief: that technology should feel like a breath of fresh air, not a wall of complexity.</p>
         </div>
     </section>
 
+    <!-- Featured Article + Aside -->
+    <section id="latest-news" class="feature-bg">
+        <div class="feature-section">
+
+            <article class="feature-article">
+                <header class="article-header">
+                    <h2>Aero Music Player 2.0 &#8212; Now Available</h2>
+                    <time datetime="2026-03-15" class="article-date">March 15, 2026</time>
+                </header>
+                <section class="article-intro">
+                    <p>We are thrilled to announce the release of Aero Music Player 2.0 &#8212; the most significant update to our flagship audio software since its original launch. Redesigned from the ground up with our community&#8217;s feedback at the core, version 2.0 brings a new level of clarity and immersion to your music listening experience.</p>
+                </section>
+                <section class="article-body">
+                    <p>The new release introduces an entirely reworked audio engine that delivers bit-perfect playback for lossless formats including FLAC, ALAC, and DSD. The visualizer has been overhauled with smooth 60&thinsp;fps animated waveforms that respond dynamically to every frequency. The interface retains the glass-like translucency that defined the original, while adding a new adaptive colour palette that shifts subtly based on album artwork.</p>
+                    <p>Aero Music Player 2.0 is available now as a free update for all existing users and as a free download for newcomers. Visit our <a href="products.html" class="article-link">Products page</a> for full details, or read the independent review at <a href="https://www.theverge.com" target="_blank" rel="noopener noreferrer" class="external-link">The Verge &#8599;</a>.</p>
+                </section>
+            </article>
+
+            <aside class="feature-aside">
+                <h3>Release Details</h3>
+                <ul class="aside-list">
+                    <li>Version: 2.0.1</li>
+                    <li>Released: March 15, 2026</li>
+                    <li>Platforms: Windows 10+, macOS 12+</li>
+                    <li>Price: Free</li>
+                    <li>Download size: 84&thinsp;MB</li>
+                </ul>
+                <h3>What&#8217;s New</h3>
+                <ol class="aside-ordered-list">
+                    <li>Bit-perfect lossless playback engine</li>
+                    <li>60&thinsp;fps animated waveform visualizer</li>
+                    <li>Adaptive album-art colour palette</li>
+                    <li>Gapless playback support</li>
+                    <li>Library scanning 3&times; faster</li>
+                </ol>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Press / Newspaper Columns -->
+    <section class="press-section">
+        <div class="press-inner">
+            <h2>Latest from Aerosoft</h2>
+            <div class="press-columns">
+                <p><strong>A New Era of Audio</strong> &#8212; When we first unveiled Aero Music Player, we set out to prove that software could be beautiful without sacrificing function. Two years later that conviction has only deepened. Our 2.0 release is the clearest statement yet of what Aerosoft stands for: tools that invite you in rather than push you away.</p>
+                <p><strong>Community at the Centre</strong> &#8212; Over the past eighteen months we collected more than 4,000 pieces of feedback from our user community. Every major decision in the 2.0 roadmap traces back to something a real person asked for. The gapless playback engine, the faster library scanner, the adaptive colour palette &#8212; all born from conversations with the people who use our software every day.</p>
+                <p><strong>What Comes Next</strong> &#8212; Aero Music Player 2.0 is only the beginning. Later this year we will preview Aero Photo Editor 1.5, bringing non-destructive editing layers and a new sky-tone preset library. We are also quietly working on something entirely new &#8212; a product that sits at the intersection of sound and space. More to come. Stay tuned, and thank you for breathing with us. &#8212; <em>The Aerosoft Team</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-inner">
+            <h2>See Aerosoft in Motion</h2>
+            <p class="video-subtitle">A glimpse into the experience we build for.</p>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/9uaHQMWaP7A"
+                    title="Aerosoft &#8212; Ambient Showcase"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internal link: bottom back to top -->
+    <div class="back-to-top-bar">
+        <a href="#top" class="back-to-top">&#8593; Back to Top</a>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Aerosoft. All rights reserved.</p>
+        <div class="footer-content">
+            <p class="footer-copy">&copy; 2026 Aerosoft. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="index.html" class="footer-nav-link">Home</a>
+                <a href="products.html" class="footer-nav-link">Products</a>
+                <a href="vision.html" class="footer-nav-link">Vision</a>
+                <a href="contact.html" class="footer-nav-link">Contact</a>
+            </nav>
+        </div>
     </footer>
 
 </body>
